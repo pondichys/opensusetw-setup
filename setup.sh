@@ -12,14 +12,14 @@ pkg_list=(
 	fzf
 	gh
 	git-delta
-	helix
 	jq
 	lazygit
+ 	neovim
 	ripgrep
 	tealdeer
-	wget
+	tmux
+ 	wget
 	yazi
-	zellij
 	zoxide
 )
 
@@ -28,7 +28,7 @@ local_dirs=("$HOME/.local/bin" "$HOME/.local/share/fonts" "$HOME/.local/share/ic
 
 ## functions
 function install_pkg () {
-	sudo zypper --non-interactive --auto-agree-with-licenses install "$1"
+	sudo zypper --non-interactive install --auto-agree-with-licenses "$1"
 }
 
 

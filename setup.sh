@@ -2,11 +2,13 @@
 ## Variable declaration
 # List of packages to install
 pkg_list=(
-	bat
+	bash-completion
+ 	bat
 	btop
 	chezmoi
 	curl
 	eza
+ 	fastfetch
 	fd
 	fish
 	fzf
@@ -16,8 +18,10 @@ pkg_list=(
 	lazygit
  	neovim
 	ripgrep
+ 	starship
 	tealdeer
 	tmux
+ 	unzip
  	wget
 	yazi
 	zoxide
@@ -39,6 +43,7 @@ done
 
 echo "Installing container software"
 install_pkg podman
+install_pkg distrobox
 
 echo "Creating $HOME/.local subdirectories"
 for dir in "${local_dirs[@]}"; do

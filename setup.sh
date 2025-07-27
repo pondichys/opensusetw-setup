@@ -18,6 +18,7 @@ pkg_list=(
 	lazygit
  	neovim
 	ripgrep
+	selinux-policy-targeted-gaming
  	starship
 	tealdeer
 	tmux

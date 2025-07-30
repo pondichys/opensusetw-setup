@@ -46,6 +46,9 @@ echo "Installing container software"
 install_pkg podman
 install_pkg distrobox
 
+echo "Installing development tools"
+sudo zypper --non-interactive install --auto-agree-with-licenses -t pattern devel_basis
+
 echo "Creating $HOME/.local subdirectories"
 for dir in "${local_dirs[@]}"; do
 	if [ ! -d "$dir" ]; then

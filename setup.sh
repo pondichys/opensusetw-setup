@@ -16,6 +16,7 @@ pkg_list=(
 	git-delta
 	jq
 	lazygit
+        lua-language-server
  	neovim
 	ripgrep
 	selinux-policy-targeted-gaming

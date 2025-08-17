@@ -21,6 +21,7 @@ pkg_list=(
 	ripgrep
 	selinux-policy-targeted-gaming
  	starship
+	StyLua
 	tealdeer
 	tmux
  	unzip

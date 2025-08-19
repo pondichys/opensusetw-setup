@@ -19,6 +19,8 @@ pkg_list=(
         lua-language-server
  	neovim
 	ripgrep
+	sane
+	sane-airscan
 	selinux-policy-targeted-gaming
  	starship
 	StyLua

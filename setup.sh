@@ -37,7 +37,11 @@ local_dirs=("$HOME/.local/bin" "$HOME/.local/share/fonts" "$HOME/.local/share/ic
 
 ## functions
 function install_pkg () {
-	sudo zypper --non-interactive install --auto-agree-with-licenses "$1"
+	if ! zypper search --installed-only "$1" | grep -q "^i"; then
+		sudo zypper --non-interactive install --auto-agree-with-licenses "$1"
+	else
+		echo "Package $1 is already installed, skipping..."
+	fi
 }
 
 

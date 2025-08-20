@@ -19,7 +19,7 @@ pkg_list=(
         lua-language-server
  	neovim
 	ripgrep
-	sane
+	sane-backends
 	sane-airscan
 	selinux-policy-targeted-gaming
  	starship

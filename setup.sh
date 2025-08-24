@@ -23,6 +23,7 @@ pkg_list=(
 	sane-airscan
 	selinux-policy-targeted-gaming
  	starship
+	steam-devices
 	StyLua
 	tealdeer
 	tmux

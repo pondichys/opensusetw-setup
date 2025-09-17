@@ -30,6 +30,7 @@ pkg_list=(
  	unzip
  	wget
 	yazi
+	yubikey-manager
 	zoxide
 )
 

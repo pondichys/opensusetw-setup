@@ -46,15 +46,18 @@ function install_pkg () {
 	fi
 }
 
-
 echo "Installing base programs ..."
 for pkg in "${pkg_list[@]}"; do
 	install_pkg $pkg
 done
 
 echo "Installing container software"
-install_pkg podman
-install_pkg distrobox
+if [ -z "$CONTAINER_ID" ]; then
+	install_pkg podman
+	install_pkg distrobox
+else
+	echo "Running inside distrobox, skipping podman and distrobox installation"
+fi
 
 echo "Installing development tools"
 sudo zypper --non-interactive install --auto-agree-with-licenses -t pattern devel_basis

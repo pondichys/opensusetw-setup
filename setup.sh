@@ -16,7 +16,7 @@ pkg_list=(
 	git-delta
 	jq
 	lazygit
-        lua-language-server
+  lua-language-server
  	neovim
 	ripgrep
 	sane-backends

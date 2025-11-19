@@ -19,3 +19,6 @@ for nf in "${nf_list[@]}"; do
 	echo "Removing ${nf}.zip archive"
 	rm -v "$local_fonts_dir/${nf}.zip"
 done
+
+echo "Refreshing font cache"
+fc-cache -fv

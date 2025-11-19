@@ -14,6 +14,7 @@ pkg_list=(
 	fzf
 	gh
 	git-delta
+	hx
 	jq
 	lazygit
   lua-language-server
